@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="./style/style.css">
+    
+<link>
+
+@import
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script>
+        var k=0;
+        window.addEventListener("scroll",function(e){
+       if(window.scrollY>0){
+       document.getElementById("nav").style.backdropFilter="blur(3px)";
+       }
+       if(window.scrollY>450){
+       document.getElementById("cursor").style.display="block";
+       k=1;
+       }
+       else{
+        document.getElementById("cursor").style.display="none";
+        k=0;
+       }
+
+        });
+        window.addEventListener("mousemove",function(e){
+         if(k===1){
+            document.getElementById("cursor").style.position="fixed";
+            document.getElementById("cursor").style.top=e.clientY+"px";
+            document.getElementById("cursor").style.left=e.clientX+"px";
+            document.getElementById("cursor").style.transform="translate(-50%,-50%)";
+         }
+        });
+    </script>
+    <wrapper>
+        <div id="cursor"></div>
+        <div id="nav">
+            <p id="logo">LOGO</p>
+            <a href="#cover">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Me</a>
+ 
+            <div id="mobilenav">     <p id="logo">LOGO</p>
+                <a href="#cover">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact Me</a></div>
+        </div>
+        <div id="cover">
+            <!>text</!>
+            <p id="text">lets start <b>this <br>show</b><K>{</K>
+            <sk><br>Hi I am Shriansh <br>
+                 Currently a student
+                 <br>
+                 learning <b>programming languages</b>
+                 <br>
+                 and this a <J>website</J> for fun 
+            </sk>
+            <k>}</k></p>
+
+            <div id="csscard">CSS</div>
+            <div id="jscard">JS</div>
+
+        </div>
+        <div id="portfolio">
+            <div id="l1"></div>
+            <div id="s1" class="k">
+            <div id="html"></div>
+    
+            </div>
+            <div id="s2" class="k"></div>
+            <div id="s3" class="k"></div>
+            <div id="s4" class="k"></div>
+
+        </div>!
+    </wrapper>
+    
+</body>
+</html>
