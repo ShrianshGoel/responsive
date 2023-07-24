@@ -6,7 +6,9 @@
    
 }
 
-
+:root{
+    --ani:connect;
+}
 ::-webkit-scrollbar{
     width:9px;
 }
@@ -95,7 +97,7 @@ a:hover{
     top:0%;
     display: flex;
     justify-content: space-around;
-    background:rgb(9, 9, 17);
+    background:rgb(14, 14, 26);
 }
 j{
     color:orange;
@@ -126,7 +128,7 @@ sk{
     
     width:100vw;
     display: block;
-    height: 20vh;
+    height: 30vh;
     margin:none;
 }
 #csscard{
@@ -181,19 +183,23 @@ sk{
 #cursor{
     width:3.5vw;
     height:3.5vw;
-    background: rgba(255, 255, 255, 0.126);
+    background: rgb(255, 255, 255);
     border-radius: 100%;
-    z-index:4;
+    z-index:2;
     position: fixed;
-    transition: all 0.2s;
+    transition: all 0.1s;
     display:none;
+    mix-blend-mode: difference;
     top:50%;
     left:50%;
+}
+#htcard p{
+    mix-blend-mode: difference;
 }
 #portfolio{
     width: 100vw;
     height: 100vh;
-    background-color:rgb(9, 9, 17);
+    background-color:rgb(12, 12, 22);
     position: absolute;
     cursor:none;
     top:107%;
@@ -218,13 +224,13 @@ sk{
     display: none;
 }
 #html{
-    transform: translate(-43%,-180%);
-  
+    transform: translate(-40%,-180%);
+  cursor:pointer;
   border-radius: 12px;
    width:10vw;
    height: 10vw;
    position: relative;
-   background-image: url(file:///home/chronos/u-870f62d1894ff89ac8f3744ae033c231a7c518a8/MyFiles/ShrianshWebsite/pics/image-removebg-preview.png);
+   background-image: url(./image-removebg-preview.png);
    background-size:9vw 10vw;
    background-position: center, 10%;
    background-repeat: no-repeat;
@@ -234,15 +240,87 @@ sk{
     z-index: 2;
    color:rgb(0, 237, 237);
 }
-#l1{
-  
-    width:9px;
-   top:30%;
-   height: 21vh;
-   z-index: 1;
-   left: 12%;
+#htcard{
+    transition: all 1.2s;
+    height:8vw;
+    opacity: 0;
+    width: 27vw;
+    background:rgba(220, 20, 60, 0);
     position: absolute;
-    animation: connect 5s;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    font-size:1.6rem;
+   display: flex;
+   justify-content: space-around;
+    text-align: center;
+    line-height: 4vw;
+    overflow:hidden;
+    top:20%;
+    left:110%;
+    border-radius: 12px;
+}
+
+#html:hover #htcard{
+   
+   opacity: 1;
+}
+#css{
+    transform: translate(-40%,120%);
+  cursor:pointer;
+  border-radius: 12px;
+   width:10vw;
+   height: 10vw;
+   position: relative;
+   background-image: url(./css.png);
+   background-size:9vw 10vw;
+   background-position: center, 10%;
+   background-repeat: no-repeat;
+   text-align: center;
+   font-size:3rem;
+transition: all 1.9s;
+   line-height: 10vw;
+    z-index: 2;
+   color:rgb(0, 237, 237);
+}
+#css:hover{
+    filter: hue-rotate(340deg);
+}
+#ccard{
+    transition: all 1.2s;
+    height:8vw;
+    opacity: 0;
+    width: 29vw;
+    background:rgba(220, 20, 60, 0);
+    position: absolute;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    font-size:1.6rem;
+   display: flex;
+   justify-content: space-around;
+    text-align: center;
+    line-height: 4vw;
+    overflow:hidden;
+    top:0%;
+    left:120%;
+    border-radius: 12px;
+}
+
+#css:hover #ccard{
+   
+   opacity: 1;
+}
+#l1{
+    position: absolute;
+    height: 0vh;
+    width:9px;
+   top:138%;
+   transition: all 2.6s;
+   z-index: 1;
+   left: 12.3%;
+   display: block;
+   z-index: 2;
     border-radius: 12px;
     background: white;
 }
@@ -251,7 +329,7 @@ sk{
         height: 0vh;
     }
     100%{
-        height: 21vh;
+        height: 18vh;
     }
 }
 .k::after{
@@ -336,4 +414,13 @@ sk{
     .k{
         transform: scale(1.6);
     }
+    #l1{
+        position:absolute;
+        top:119.7%;
+        width:25vw;
+      
+        left:25%;
+        height:7px;
+    }
+
 }

@@ -22,7 +22,7 @@
        if(window.scrollY>0){
        document.getElementById("nav").style.backdropFilter="blur(3px)";
        }
-       if(window.scrollY>450){
+       if(window.scrollY>550){
        document.getElementById("cursor").style.display="block";
        k=1;
        }
@@ -34,10 +34,17 @@
         });
         window.addEventListener("mousemove",function(e){
          if(k===1){
+            
             document.getElementById("cursor").style.position="fixed";
             document.getElementById("cursor").style.top=e.clientY+"px";
+        
+           
+            document.getElementById("l1").style.height="18vh";
             document.getElementById("cursor").style.left=e.clientX+"px";
             document.getElementById("cursor").style.transform="translate(-50%,-50%)";
+         }
+         else{
+            document.getElementById("l1").style.height="0vh";
          }
         });
     </script>
@@ -72,13 +79,14 @@
             <div id="jscard">JS</div>
 
         </div>
+        <div id="l1"></div>
         <div id="portfolio">
-            <div id="l1"></div>
+         
             <div id="s1" class="k">
-            <div id="html"></div>
-    
+            <div id="html"><div id="htcard"><p>My first language started at class 4</p></div></div>
             </div>
-            <div id="s2" class="k"></div>
+            <div id="s2" class="k">            <div id="css"><div id="ccard"><p>My Second language still left to fully master</p></div></div>
+        </div>
             <div id="s3" class="k"></div>
             <div id="s4" class="k"></div>
 
